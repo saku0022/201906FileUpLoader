@@ -1,0 +1,7 @@
+body{
+                background-color: #FFCCCC;
+            }
+
+a.flex-sm-fill text-sm-center nav-link active {
+    background: #00afcc !important;
+}
