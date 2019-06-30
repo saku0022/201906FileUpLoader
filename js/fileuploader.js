@@ -1,4 +1,21 @@
 //　fileuploader.tplより
+
+// タブがクリックされイベントをJavaScript側で以下のように受け取れる。
+$('a[data-toggle="tab"]').on('shown', function (e) {
+ // クリックされたタブ名はこんな感じで取得する。
+ var tabName = e.target.href;
+ var items = tabName.split("#"); // activated tab
+
+ // 処理内容を書く
+ alert('タブ  ');
+
+ //e.relatedTarget // 直前のタブはこんなんで取得可能らしい
+});
+
+//$(document).on('click', '.btn btn-info', function(){
+//	  alert('Button is clicked');
+//	});
+
 // 「全て選択」チェックで全てにチェック付く
 function AllChecked(flg){
 	if (document.file_list.test instanceof RadioNodeList) {	// 配列になっているか、判定

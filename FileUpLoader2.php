@@ -10,7 +10,7 @@ class FileUpLoader extends base {
     	// allフォルダーへ保存　できればOK
     	// ユーザー <=> 共有　行ったり来たり
 
-    	$email=$_SESSION['email']; // 不正アクセス防止のため
+//     	$email=$_SESSION['email']; // 不正アクセス防止のため、になってない、、
     	// ファイル一覧表示
     	$dir = $this->makeDir(all);
     	// ディレクトリ・ハンドルをオープン
